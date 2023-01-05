@@ -6,18 +6,25 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class TableOfTwo
+    public class HarmonicNumber
     {
-        public void Table()
+        public void HarmonicSeries()
         {
-            Console.WriteLine("Enter any number:");
-            int number = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < number; i++)
+            int i;
+            double num;
+            double result = 0.0;
+
+            Console.WriteLine("Enter any number: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for (i = 0; i < num; i++)
             {
-                int num = (int)Math.Pow(2, i);
-                Console.WriteLine("2" + " " + "^" + " " + i + "=" + num);
+                Console.Write("1/{0} +", i);
+                result += 1 / (double)i;
             }
+            Console.WriteLine(result);
         }
+
     }
 }
 
