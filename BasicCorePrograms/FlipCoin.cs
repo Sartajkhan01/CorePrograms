@@ -7,18 +7,23 @@ using System.Threading.Tasks;
 namespace BasicCorePrograms
 {
 
-    public class QuotientandRemainder
+    public class SwapingTwoNumbers
     {
-        int Quotient = 0, Remainder = 0;
-        public void ComputeQuotientandRemainder()
+        public void Swap()
         {
-            Console.WriteLine("Enter any number : ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            Quotient = num / 10;
-            Remainder = num % 10;
+            Console.WriteLine("Enter first number : ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Quotient of given number : " + Quotient);
-            Console.WriteLine("Remainder of given number : " + Remainder);
+            Console.WriteLine("Enter second number : ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            num1 = num1 + num2;
+            num2 = num1 - num2;
+            num1 = num1 - num2;
+
+            Console.WriteLine("After Swap num1 = " + num1);
+
+            Console.WriteLine("After Swap num2 = " + num2);
         }
     }
 }
