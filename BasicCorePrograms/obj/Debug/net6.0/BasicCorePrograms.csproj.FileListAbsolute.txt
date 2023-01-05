@@ -1,0 +1,5 @@
+C:\Users\Sartaj khan\source\repos\BasicCorePrograms\BasicCorePrograms\obj\Debug\net6.0\BasicCorePrograms.csproj.AssemblyReference.cache
+C:\Users\Sartaj khan\source\repos\BasicCorePrograms\BasicCorePrograms\obj\Debug\net6.0\BasicCorePrograms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sartaj khan\source\repos\BasicCorePrograms\BasicCorePrograms\obj\Debug\net6.0\BasicCorePrograms.AssemblyInfoInputs.cache
+C:\Users\Sartaj khan\source\repos\BasicCorePrograms\BasicCorePrograms\obj\Debug\net6.0\BasicCorePrograms.AssemblyInfo.cs
+C:\Users\Sartaj khan\source\repos\BasicCorePrograms\BasicCorePrograms\obj\Debug\net6.0\BasicCorePrograms.csproj.CoreCompileInputs.cache

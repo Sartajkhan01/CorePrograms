@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the Basic Programming Problems");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. End the Program ");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. End the Program ");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute");
@@ -18,6 +18,10 @@
                         flipcoin.Flip();
                         break;
                     case 2:
+                        LeapYear checking = new LeapYear();
+                        checking.CheckLeapyear();
+                        break;
+                    case 3:
                         end = false;
                         break;
                     default:

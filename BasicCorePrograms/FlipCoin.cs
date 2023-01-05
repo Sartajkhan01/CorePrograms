@@ -6,32 +6,24 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class FlipCoin
+    public class LeapYear
     {
-        const double IS_HEAD = 0.5;
-        int headCount = 0, tailCount = 0;
-        public void Flip()
+        public void CheckLeapyear()
         {
-            Console.WriteLine("How many flips do you want ?");
-            int num = Convert.ToInt32(Console.ReadLine());
-            while (num > 0)
+            Console.WriteLine("Enter the year you want to check:");
+            int year = Convert.ToInt32(Console.ReadLine());
+            if (year % 4 == 0 || year % 100 == 0 && year % 400 == 0)
             {
-                Random random = new Random();
-                double option = random.NextDouble();
-                if (option > IS_HEAD)
-                {
-                    headCount++;
-                }
-                else
-                {
-                    tailCount++;
-                }
-                num--;
+                Console.WriteLine("The given year is leap year");
             }
-            double headPercentage = (headCount % 100);
-            double tailPercentage = (tailCount % 100);
-            Console.WriteLine("Percentage of Head :" + headPercentage);
-            Console.WriteLine("Percentage of Tail : " + tailPercentage);
+            else
+            {
+                Console.WriteLine("The given year is not a leap year");
+            }
         }
     }
 }
+
+
+
+
