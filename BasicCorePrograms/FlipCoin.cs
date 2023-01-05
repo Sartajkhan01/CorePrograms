@@ -7,20 +7,23 @@ using System.Threading.Tasks;
 namespace BasicCorePrograms
 {
 
-    public class EvenOdd
+    public class VowelConsonant
     {
-        public void Checking()
+        char value;
+        public void alphabetcheck()
         {
-            Console.WriteLine("Enter number to check for even or odd :");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if (num % 2 == 0)
+            Console.WriteLine("Enter an alphabet to check :");
+            value = Convert.ToChar(Console.ReadLine());
+
+            if (value == 'a' || value == 'e' || value == 'i' || value == 'o' || value == 'u')
             {
-                Console.WriteLine("The given number is even");
+                Console.WriteLine("This is a vowel");
             }
             else
             {
-                Console.WriteLine("The given number is odd ");
+                Console.WriteLine("This is a consonant");
             }
+
         }
     }
 }
