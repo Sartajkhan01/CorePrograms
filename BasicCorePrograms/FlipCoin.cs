@@ -6,25 +6,33 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class HarmonicNumber
+    public class PrimeFactors
     {
-        public void HarmonicSeries()
+        int count = 0;
+        public void factors()
         {
-            int i;
-            double num;
-            double result = 0.0;
+            Console.WriteLine("Enter number to find its prime factors: ");
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter any number: ");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            for (i = 0; i < num; i++)
+            for (int i = 2; i < num; i++)
             {
-                Console.Write("1/{0} +", i);
-                result += 1 / (double)i;
+                if (num % i == 0)
+                {
+                    count = 0;
+                    for (int j = 1; j <= i; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            count++;
+                        }
+                    }
+                    if (count <= 2)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
             }
-            Console.WriteLine(result);
         }
-
     }
 }
 
