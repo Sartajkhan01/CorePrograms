@@ -6,32 +6,19 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class PrimeFactors
-    {
-        int count = 0;
-        public void factors()
-        {
-            Console.WriteLine("Enter number to find its prime factors: ");
-            int num = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 2; i < num; i++)
-            {
-                if (num % i == 0)
-                {
-                    count = 0;
-                    for (int j = 1; j <= i; j++)
-                    {
-                        if (i % j == 0)
-                        {
-                            count++;
-                        }
-                    }
-                    if (count <= 2)
-                    {
-                        Console.WriteLine(i);
-                    }
-                }
-            }
+    public class QuotientandRemainder
+    {
+        int Quotient = 0, Remainder = 0;
+        public void ComputeQuotientandRemainder()
+        {
+            Console.WriteLine("Enter any number : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Quotient = num / 10;
+            Remainder = num % 10;
+
+            Console.WriteLine("Quotient of given number : " + Quotient);
+            Console.WriteLine("Remainder of given number : " + Remainder);
         }
     }
 }

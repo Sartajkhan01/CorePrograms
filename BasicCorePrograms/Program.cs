@@ -7,7 +7,8 @@
             Console.WriteLine("Welcome to the Basic Programming Problems");
             bool end = true;
             Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. " +
-                "TableOfTwo\n4. HarmonicSeries\n5. PrimeFactors\n6. End the Program ");
+                "TableOfTwo\n4. HarmonicSeries\n5. PrimeFactors\n6. Remainder and Quotient\n7." +
+                " End the Program ");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute");
@@ -35,6 +36,10 @@
                         factors.factors();
                         break;
                     case 6:
+                        QuotientandRemainder computing = new QuotientandRemainder();
+                        computing.ComputeQuotientandRemainder();
+                        break;
+                    case 7:
                         end = false;
                         break;
                     default:
