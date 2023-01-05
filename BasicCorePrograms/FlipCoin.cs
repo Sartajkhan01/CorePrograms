@@ -7,21 +7,31 @@ using System.Threading.Tasks;
 namespace BasicCorePrograms
 {
 
-    public class VowelConsonant
+    public class LargestNumber
     {
-        char value;
-        public void alphabetcheck()
+        int a, b, c;
+        public void FindLargest()
         {
-            Console.WriteLine("Enter an alphabet to check :");
-            value = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("Enter the first number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
 
-            if (value == 'a' || value == 'e' || value == 'i' || value == 'o' || value == 'u')
+            Console.WriteLine("Enter the second number : ");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number : ");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            if (a > b && a > c)
             {
-                Console.WriteLine("This is a vowel");
+                Console.WriteLine(a + "is the greatest of all");
+            }
+            else if (b > c && b > a)
+            {
+                Console.WriteLine(b + "is the greatet of all");
             }
             else
             {
-                Console.WriteLine("This is a consonant");
+                Console.WriteLine(c + "is the greatest of all ");
             }
 
         }
