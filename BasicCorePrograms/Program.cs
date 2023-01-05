@@ -8,8 +8,7 @@
             bool end = true;
             Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. " +
                 "TableOfTwo\n4. HarmonicSeries\n5. PrimeFactors\n6. " +
-                "Remainder and Quotient\n7. SwappingNumbers\n8." +
-                " End the Program ");
+                "Remainder and Quotient\n7. EvenOrOdd\n8. End the Program ");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute");
@@ -41,10 +40,9 @@
                         computing.ComputeQuotientandRemainder();
                         break;
                     case 7:
-                        SwapingTwoNumbers swaping = new SwapingTwoNumbers();
-                        swaping.Swap();
+                        EvenOdd checkingevenodd = new EvenOdd();
+                        checkingevenodd.Checking();
                         break;
-                    
                     case 8:
                         end = false;
                         break;

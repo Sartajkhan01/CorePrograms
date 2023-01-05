@@ -7,23 +7,20 @@ using System.Threading.Tasks;
 namespace BasicCorePrograms
 {
 
-    public class SwapingTwoNumbers
+    public class EvenOdd
     {
-        public void Swap()
+        public void Checking()
         {
-            Console.WriteLine("Enter first number : ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter second number : ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-
-            num1 = num1 + num2;
-            num2 = num1 - num2;
-            num1 = num1 - num2;
-
-            Console.WriteLine("After Swap num1 = " + num1);
-
-            Console.WriteLine("After Swap num2 = " + num2);
+            Console.WriteLine("Enter number to check for even or odd :");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("The given number is even");
+            }
+            else
+            {
+                Console.WriteLine("The given number is odd ");
+            }
         }
     }
 }
