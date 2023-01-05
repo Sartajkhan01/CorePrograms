@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class LeapYear
+    public class TableOfTwo
     {
-        public void CheckLeapyear()
+        public void Table()
         {
-            Console.WriteLine("Enter the year you want to check:");
-            int year = Convert.ToInt32(Console.ReadLine());
-            if (year % 4 == 0 || year % 100 == 0 && year % 400 == 0)
+            Console.WriteLine("Enter any number:");
+            int number = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < number; i++)
             {
-                Console.WriteLine("The given year is leap year");
-            }
-            else
-            {
-                Console.WriteLine("The given year is not a leap year");
+                int num = (int)Math.Pow(2, i);
+                Console.WriteLine("2" + " " + "^" + " " + i + "=" + num);
             }
         }
     }
